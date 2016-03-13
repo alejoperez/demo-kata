@@ -5,7 +5,11 @@ class Calculator:
         if string == '':
             return 0
         elif ',' in string:
-            return int(string[0]) + int(string[2])
+            numbers = string.split(',')
+            total = 0
+            for num in numbers:
+                total = total + int(num)
+            return total
         else:
             return int(string)
 
