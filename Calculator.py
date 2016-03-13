@@ -8,3 +8,4 @@ class Calculator:
             return int(string[0]) + int(string[2])
         else:
             return int(string)
+
