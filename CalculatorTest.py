@@ -13,3 +13,6 @@ class CalculatorTest(TestCase):
     def test_sum_any_number(self):
         self.assertEqual(Calculator().sum('1'),1,'One string number')
         self.assertEqual(Calculator().sum('2'),2,'One string number')
+
+    def test_sum_two_numbers(self):
+        self.assertEqual(Calculator().sum('1,3'),4,'Two string numbers')
