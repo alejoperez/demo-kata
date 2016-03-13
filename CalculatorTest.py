@@ -18,4 +18,7 @@ class CalculatorTest(TestCase):
         self.assertEqual(Calculator().sum('1,3'),4,'Two string numbers')
 
     def test_sum_any_numbers(self):
-        self.assertEqual(Calculator().sum('5,2,4,1'),12,'Two string numbers')
+        self.assertEqual(Calculator().sum('5,2,4,1'),12,'Any string numbers')
+
+    def test_sum_any_numbers_with_any_separators(self):
+        self.assertEqual(Calculator().sum('5,2&4:1:2&8'),22,'Any string numbers with different separators')
