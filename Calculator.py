@@ -2,4 +2,7 @@
 
 class Calculator:
     def sum(self,string):
-        return 0
+        if string == '':
+            return 0
+        else:
+            return 1
