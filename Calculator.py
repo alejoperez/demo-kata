@@ -1,5 +1,5 @@
 
 
 class Calculator:
-    def sum(string):
-        pass
+    def sum(self,string):
+        return 0
